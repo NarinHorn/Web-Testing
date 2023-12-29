@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Daily Report</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Daily Report</h1>
+
+        <form id="reportForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="tasksCompleted">Tasks Completed:</label>
+            <textarea id="tasksCompleted" required></textarea>
+
+            <label for="issuesChallenges">Issues/Challenges:</label>
+            <textarea id="issuesChallenges"></textarea>
+
+            <label for="nextSteps">Next Steps:</label>
+            <textarea id="nextSteps"></textarea>
+
+            <label for="notesComments">Notes/Comments:</label>
+            <textarea id="notesComments"></textarea>
+
+            <button type="button" onclick="submitReport()">Submit Report</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
